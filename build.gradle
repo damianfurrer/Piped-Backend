@@ -55,7 +55,9 @@ jar {
     }
 }
 
+compileJava.options.fork = true
+compileJava.options.forkOptions.executable = '/usr/lib/jvm/openjdk-bin-17/bin/javac'
 group = 'me.kavin.piped'
 version = '1.0'
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = 17
+targetCompatibility = 17
